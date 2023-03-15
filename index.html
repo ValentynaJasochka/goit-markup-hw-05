@@ -31,7 +31,7 @@
           >
           <ul class="nav-list list">
             <li class="nav-item">
-              <a class="nav-link link" href="./index.html">Studio</a>
+              <a class="nav-link link curent" href="./index.html">Studio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link link" href="./portfolio.html">Portfolio</a>
@@ -62,7 +62,18 @@
       <section class="hero">
         <div class="container">
           <h1 class="main-header">Effective Solutions for Your Business</h1>
-          <button class="service-btn" type="button">Order Service</button>
+          <button class="service-btn" type="button" data-modal-open>
+            Order Service
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-close-btn" type="button" data-modal-close>
+                <svg class="modal-close-btn-item" width="8px" height="8px">
+                  <use href="./images/icons.svg#vector"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <!-- ======================Explorer directions============ -->
@@ -433,5 +444,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
